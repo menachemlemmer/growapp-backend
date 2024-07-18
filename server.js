@@ -22,6 +22,10 @@ app.use("/plants", plantRouter);
 app.use("/comments", commentsRouter);
 app.use("/tasks", taskRouter);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Plant App!");
+});
+
 app.listen(3000, () => {
   console.log("The express app is ready!");
 });

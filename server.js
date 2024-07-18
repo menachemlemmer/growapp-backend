@@ -26,6 +26,6 @@ app.get("/", (req, res) => {
   res.send("Welcome to the Plant App!");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("The express app is ready!");
 });
